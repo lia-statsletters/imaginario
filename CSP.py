@@ -87,6 +87,10 @@ class backtrack_search():
                 continue
 
             currsize=len(self.remaining_legal_values[variable])
+
+            if currsize > winnersize:
+                continue
+
             if currsize < winnersize:
                 del winners[:]
                 winnersize=currsize
