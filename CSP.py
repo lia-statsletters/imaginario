@@ -126,6 +126,7 @@ class backtrack_search():
         return rand_choice(self.remaining_legal_values[variable])
 
     def search(self):
+        #TODO: Actually doing the search...
         nextVar=self.next_variable()
         nextVal=self.next_value(nextVar)
         print (nextVar,nextVal)
