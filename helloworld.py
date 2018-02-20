@@ -26,11 +26,3 @@ class imaginariopage():
             self.graph.put_wall_post('blip blip hi!')
         except Exception as bummer:
             print('oh no! cant post because {}'.format(bummer.args))
-
-
-if __name__ == "__main__":
-    # imaginario sandbox ID: 1781737371858167
-    app = imaginariopage({'appid': '985317034950101',
-                          'appsecret': '02bc46c89fa136dafe54a1481bc701ca',
-                          'pageid': '1781737371858167'})
-    app.run()
